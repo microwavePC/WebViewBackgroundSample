@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:controls="clr-namespace:WebViewBackgroundSample;assembly=WebViewBackgroundSample"
+			 prism:ViewModelLocator.AutowireViewModel="True"
+			 x:Class="WebViewBackgroundSample.Views.MainPage"
+			 Title="MainPage">
+	<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+		<Grid>
+			<controls:CustomWebView HorizontalOptions="FillAndExpand"
+									VerticalOptions="FillAndExpand"
+									WidthRequest="5000"
+									HeightRequest="5000"
+									Source="{Binding Url}">
+			</controls:CustomWebView>
+			<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="20,20,20,20">
+				<Button Text="Matrix"
+						BorderColor="Silver"
+						BorderWidth="1"
+						FontSize="20"
+						Margin="0,10,0,0"
+						Command="{Binding ChangeBackgroundMatrixCommand}" />
+				<Button Text="Transmission"
+						BorderColor="Silver"
+						BorderWidth="1"
+						FontSize="20"
+						Margin="0,10,0,0"
+						Command="{Binding ChangeBackgroundTransmissionCommand}" />
+				<Button Text = "Blank"
+						BorderColor="Silver"
+						BorderWidth="1"
+						FontSize="20"
+						Margin="0,10,0,0"
+						Command="{Binding ChangeBackgroundBlankCommand}" />
+			</StackLayout>
+		</Grid>
+	</StackLayout>
+</ContentPage>
