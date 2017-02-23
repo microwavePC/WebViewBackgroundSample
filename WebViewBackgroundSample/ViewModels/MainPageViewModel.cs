@@ -8,6 +8,8 @@ namespace WebViewBackgroundSample.ViewModels
 {
 	public class MainPageViewModel : BindableBase, INavigationAware
 	{
+		private string _localHtmlFileRootPath;
+
 		private string _url;
 		public string Url
 		{
@@ -24,19 +26,20 @@ namespace WebViewBackgroundSample.ViewModels
 		public MainPageViewModel(IHtmlLoader htmlLoader)
 		{
 			_htmlLoader = htmlLoader;
+			_localHtmlFileRootPath = _htmlLoader.GetHtmlFileRootPath();
 
 			ChangeBackgroundMatrixCommand = new DelegateCommand(() => {
-				Url = _htmlLoader.GetHtmlFileRootPath() + "Background_Matrix.html";
+				Url = _localHtmlFileRootPath + "Background_Matrix.html";
 			});
 
 			ChangeBackgroundTransmissionCommand = new DelegateCommand(() =>
 			{
-				Url = _htmlLoader.GetHtmlFileRootPath() + "Background_Transmission.html";
+				Url = _localHtmlFileRootPath + "Background_Transmission.html";
 			});
 
 			ChangeBackgroundBlankCommand = new DelegateCommand(() =>
 			{
-				Url = _htmlLoader.GetHtmlFileRootPath() + "Background_Blank.html";
+				Url = _localHtmlFileRootPath + "Background_Blank.html";
 			});
 		}
 

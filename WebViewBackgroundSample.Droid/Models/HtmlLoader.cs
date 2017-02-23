@@ -1,5 +1,4 @@
-﻿using WebViewBackgroundSample.Models;
-using WebViewBackgroundSample.Models.Droid;
+﻿using WebViewBackgroundSample.Models.Droid;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(HtmlLoader))]

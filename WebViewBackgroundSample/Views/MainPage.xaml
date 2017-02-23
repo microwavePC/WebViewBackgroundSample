@@ -15,7 +15,7 @@
 									Source="{Binding Url}">
 			</controls:CustomWebView>
 			<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="20,20,20,20">
-				<Button Text="Matrix"
+				<Button Text="Matrix-like"
 						BorderColor="Silver"
 						BorderWidth="1"
 						FontSize="20"

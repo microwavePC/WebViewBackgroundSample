@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace WebViewBackgroundSample
 {
@@ -10,9 +8,5 @@ namespace WebViewBackgroundSample
 		{
 			InitializeComponent();
 		}
-
-		// 背景色を透明にする処理
-		public delegate void SetBackgroundColorTransparentHandler();
-		public SetBackgroundColorTransparentHandler SetBackgroundColorTransparent;
 	}
 }
