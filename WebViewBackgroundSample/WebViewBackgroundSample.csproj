@@ -36,7 +36,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\MainPageViewModel.cs" />
-    <Compile Include="Models\IHtmlLoader.cs" />
+    <Compile Include="Models\IResourceUtility.cs" />
     <Compile Include="CustomControls\CustomWebView.xaml.cs">
       <DependentUpon>CustomWebView.xaml</DependentUpon>
     </Compile>

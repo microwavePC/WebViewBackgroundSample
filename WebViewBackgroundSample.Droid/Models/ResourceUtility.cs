@@ -1,10 +1,10 @@
 ﻿using WebViewBackgroundSample.Models.Droid;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(HtmlLoader))]
+[assembly: Dependency(typeof(ResourceUtility))]
 namespace WebViewBackgroundSample.Models.Droid
 {
-	public class HtmlLoader : IHtmlLoader
+	public class ResourceUtility : IResourceUtility
 	{
 		public string GetHtmlFileRootPath()
 		{

@@ -17,16 +17,16 @@ namespace WebViewBackgroundSample.ViewModels
 			set { SetProperty(ref _url, value); }
 		}
 
-		private readonly IHtmlLoader _htmlLoader;
+		private readonly IResourceUtility _resourceUtility;
 
 		public ICommand ChangeBackgroundMatrixCommand { get; }
 		public ICommand ChangeBackgroundTransmissionCommand { get; }
 		public ICommand ChangeBackgroundBlankCommand { get; }
 
-		public MainPageViewModel(IHtmlLoader htmlLoader)
+		public MainPageViewModel(IResourceUtility htmlLoader)
 		{
-			_htmlLoader = htmlLoader;
-			_localHtmlFileRootPath = _htmlLoader.GetHtmlFileRootPath();
+			_resourceUtility = htmlLoader;
+			_localHtmlFileRootPath = _resourceUtility.GetHtmlFileRootPath();
 
 			ChangeBackgroundMatrixCommand = new DelegateCommand(() => {
 				Url = _localHtmlFileRootPath + "Background_Matrix.html";

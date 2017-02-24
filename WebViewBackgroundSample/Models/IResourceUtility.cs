@@ -1,6 +1,6 @@
 ﻿namespace WebViewBackgroundSample.Models
 {
-	public interface IHtmlLoader
+	public interface IResourceUtility
 	{
 		string GetHtmlFileRootPath();
 	}

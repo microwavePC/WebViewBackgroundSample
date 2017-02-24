@@ -1,13 +1,11 @@
-﻿using System;
-using Foundation;
-using WebViewBackgroundSample.Models;
+﻿using Foundation;
 using WebViewBackgroundSample.Models.iOS;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(HtmlLoader))]
+[assembly: Dependency(typeof(ResourceUtility))]
 namespace WebViewBackgroundSample.Models.iOS
 {
-	public class HtmlLoader : IHtmlLoader
+	public class ResourceUtility : IResourceUtility
 	{
 		public string GetHtmlFileRootPath()
 		{

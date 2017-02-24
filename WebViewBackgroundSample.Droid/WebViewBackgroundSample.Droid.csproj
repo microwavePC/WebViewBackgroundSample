@@ -109,7 +109,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\HtmlLoader.cs" />
+    <Compile Include="Models\ResourceUtility.cs" />
     <Compile Include="CustomControls\CustomWebViewRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
