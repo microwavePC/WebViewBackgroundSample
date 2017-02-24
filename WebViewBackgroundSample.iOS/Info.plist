@@ -5,7 +5,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>WebViewBackgroundTrial</string>
 	<key>CFBundleIdentifier</key>
-	<string>jp.ne.mwpc.webviewbackgroundtrial</string>
+	<string>jp.ne.mwpc.webviewbackgroundsample</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
