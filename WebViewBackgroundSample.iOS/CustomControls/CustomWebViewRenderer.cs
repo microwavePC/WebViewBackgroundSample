@@ -12,6 +12,7 @@ namespace WebViewBackgroundSample.iOS
 		protected override void OnElementChanged(VisualElementChangedEventArgs e)
 		{
 			base.OnElementChanged(e);
+			this.Opaque = false;
 			this.BackgroundColor = UIColor.Clear;
 		}
 	}

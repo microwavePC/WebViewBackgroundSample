@@ -52,6 +52,11 @@ namespace WebViewBackgroundSample.ViewModels
 		{
 			
 		}
+
+		public void OnNavigatingTo(NavigationParameters parameters)
+		{
+			
+		}
 	}
 }
 
